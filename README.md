@@ -1,2 +1,2 @@
-# Nhom12_73DCTT24
-Bài tập cuối kỳ SVN-Git
+# QLSV_PHP
+Web quản lý sinh viên PHP
