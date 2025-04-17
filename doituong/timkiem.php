@@ -1,5 +1,6 @@
-<?php $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
-    mysqli_set_charset($conn, 'utf8');
+<?php
+   $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
+   mysqli_set_charset($conn, 'utf8');
     if(isset($_POST['masv'])){
         $ma = $_POST['masv'];
         $sql ="select * from lop join sinhvien on lop.MaLop=sinhvien.MaLop where MaSV='$ma'";

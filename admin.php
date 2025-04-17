@@ -1,6 +1,6 @@
 <?php
-	 $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
-     mysqli_set_charset($conn, 'utf8');
+	$conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") ;
+    mysqli_set_charset($conn, 'utf8');
     //session_start();
     $user = $_SESSION['user'];
     $sql = "SELECT * FROM users WHERE username = '$user'";
@@ -19,7 +19,7 @@
           href="styleAdmin.css?v=1.0">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Quản lý sinh viên PTIT</title>
+    <title>Quản lý sinh viên UTT</title>
 </head>
 
 <body>
@@ -27,11 +27,11 @@
         <div class="title">
             <div class="Group1">
                 <div class="logo">
-                    <img src="./images/logoptit.png"
+                    <img src="./images/bf1e7892c5d69465c57d7d1397026e23.jpg"
                          alt="">
                 </div>
                 <div class="img-content">
-                    <img src="./images/chuptit.png"
+                    <img src="./images/LOGOUTT.png"
                          alt="">
                 </div>
             </div>
@@ -113,7 +113,7 @@
                 <div class="DB-content">
                     <div class="grid">
                         <div class="grid-4"
-                             style="background-color: rgb(173, 23, 28);">
+                             style="background-color: #324960;">
                             <div class="left">
                                 <div>
                                     <p>1</p>
@@ -127,7 +127,7 @@
                             </div>
                         </div>
                         <div class="grid-4"
-                             style="background-color: rgb(173, 23, 28);">
+                             style="background-color: #324960;">
                             <div class="left">
                                 <div>
                                     <p>2</p>
@@ -141,7 +141,7 @@
                             </div>
                         </div>
                         <div class="grid-4"
-                             style="background-color: rgb(173, 23, 28);">
+                             style="background-color: #324960;">
                             <div class="left">
                                 <div>
                                     <p>3</p>
@@ -155,7 +155,7 @@
                             </div>
                         </div>
                         <div class="grid-4"
-                             style="background-color: rgb(173, 23, 28);">
+                             style="background-color:  #324960;">
                             <div class="left">
                                 <div>
                                     <p>4</p>
@@ -172,7 +172,7 @@
                     </div>
                     <div class="grid">
                         <div class="grid-4"
-                             style="background-color: rgb(173, 23, 28);">
+                             style="background-color: #324960;">
                             <div class="left">
                                 <div>
                                     <p>5</p>
@@ -186,7 +186,7 @@
                             </div>
                         </div>
                         <div class="grid-4"
-                             style="background-color: rgb(173, 23, 28);">
+                             style="background-color:   #324960;">
                             <div class="left">
                                 <div>
                                     <p>6</p>
@@ -200,7 +200,7 @@
                             </div>
                         </div>
                         <div class="grid-4"
-                             style="background-color: rgb(173, 23, 28);">
+                             style="background-color:  #324960;">
                             <div class="left">
                                 <div>
                                     <p>7</p>
@@ -214,7 +214,7 @@
                             </div>
                         </div>
                         <div class="grid-4"
-                             style="background-color: rgb(173, 23, 28);">
+                             style="background-color: #324960;">
                             <div class="left">
                                 <div>
                                     <p>8</p>
@@ -236,29 +236,30 @@
     </section>
     <footer>
         <div class="footer-contain">
-            <div class="footer-contain-left"><h2>HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG</h2>
+            <div class="footer-contain-left"><h2>TRƯỜNG ĐẠI HỌC CÔNG NGHỆ GTVT</h2>
                 <h2>Địa chỉ</h2>
                 <div class="address">
                     <h2>Cơ sở đào tạo tại Hà Nội:</h2>
-                    <p> Km10, Đường Nguyễn Trãi, Q.Hà Đông, Hà Nội<br></p>
-                    <h2>Cơ sở đào tạo tại TP Hồ Chí Minh:</h2>
-                    <p>Đường Man Thiện, P. Hiệp Phú, Q.9 TP Hồ Chí Minh<br></p>
+                    <p> 54 Triều Khúc,Thanh Xuân,Hà Nội<br></p>
+                    <h2>Cơ sở đào tạo tại Thái Nguyên:</h2>
+                    <p>Phường Tân Thịnh,Tp.Thái Nguyên,Thái Nguyên<br></p>
+                    <h2>Cơ sở đào tạo tại Vĩnh Phúc:</h2>
+                    <p>278 Lam Sơn,Đồng Tâm,TP.Vĩnh Yên,Vĩnh Phúc<br></p>
                 </div>
             </div>
             <div class="footer-contain-right">
                 <h2>Liên Hệ</h2>
                 <div class="contact">
                     <div class="contact-left">
-                        <a href="https://www.facebook.com/HocvienPTIT"><i
+                        <a href="https://www.facebook.com/utt.vn"><i
                                class="fa-brands fa-facebook"></i>Facebook</a><br>
-                        <a href="https://portal.ptit.edu.vn/"><i
+                        <a href="https://www.utt.edu.vn/"><i
                                class="fa-brands fa-google"></i>Google</a><br>
-                        <a href="https://www.youtube.com/@PChannels"><i
-                               class="fa-brands fa-youtube"></i>Youtube</a><br>
+                       
                     </div>
                     <div class="contact-right">
                         <p>Bản đồ</p>
-                        <a href="https://maps.app.goo.gl/9NCSWgSK1cWDHjRu9">
+                        <a href="https://maps.app.goo.gl/eajMpH8Q1qbfnXuo9">
                             <img src="./images/maps.jpg"
                                  alt="">
                         </a>

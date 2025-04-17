@@ -1,6 +1,6 @@
 <?php
-     $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
-     mysqli_set_charset($conn, 'utf8');
+  $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
+  mysqli_set_charset($conn, 'utf8');
     if(isset($_POST['submit'])){
         $ma = $_POST['masv'];
         $sql ="select *from sinhvien join lop where sinhvien.MaLop=lop.MaLop AND (MaSV='$ma' or TenSV='$ma')";

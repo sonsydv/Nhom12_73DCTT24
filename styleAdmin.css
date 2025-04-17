@@ -28,7 +28,7 @@ header .logo img {
 }
 
 header .username p {
-  color: #fff;
+  color: #ffffff;
   margin-top: 50px;
   font-size: 20px;
   margin-right: 100px;
@@ -36,20 +36,21 @@ header .username p {
 
 header .title2 h2 {
   text-align: center;
-  color: rgb(173, 23, 28);
+  color:  #324960; /* Màu cam */
   padding: 5px;
 }
 
 nav .group-user {
   float: right;
   margin-right: 10px;
-  color: #fff;
+  color: #ffffff;
   position: relative;
 }
 
 a {
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
@@ -59,8 +60,8 @@ li {
   width: 125px;
   position: absolute;
   top: 30px;
-  background-color: rgb(173, 23, 28);
-  border: 2px solid rgb(255, 255, 255);
+  background-color: #ff5722; /* Màu nền cam */
+  border: 2px solid #ffffff;
   display: none;
 }
 
@@ -88,12 +89,12 @@ li {
 nav .group-menu ul li a {
   padding: 20px;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
 
 nav {
   padding: 10px;
-  background-color: rgb(173, 23, 28);
+  background-color:  #324960; /* Màu nền cam */
   height: 40px;
 }
 
@@ -102,7 +103,7 @@ section {
 }
 
 section #menu {
-  background-color: rgb(49, 43, 43);
+  background-color: #324960; /* Màu xám đen cho menu */
   width: 17%;
   height: 700px;
   padding: 10px 0;
@@ -115,22 +116,26 @@ section #menu > ul {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .func-icon-right {
   margin-left: 20px;
   display: inline-block;
 }
+
 .func-icon-down {
   margin-left: 20px;
   display: none;
 }
+
 section #menu > ul > li {
   padding: 20px;
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
+
 section #menu > ul > li:hover {
-  background-color: #324960;
+  background-color: #22c8ff; /* Đổi màu nền khi hover sang cam */
 }
 
 section #menu ul li a {
@@ -138,6 +143,7 @@ section #menu ul li a {
   color: white;
   font-size: 15px;
 }
+
 section #menu ul li a i {
   padding-right: 5px;
 }
@@ -150,9 +156,11 @@ section #menu ul li a i {
   width: 100%;
   text-align: left;
 }
+
 .more-func i {
   margin-left: -3px;
 }
+
 .more-func-child {
   width: 100%;
   top: 50px;
@@ -165,6 +173,7 @@ section #menu ul li a i {
   border-bottom: 1px solid rgb(47, 47, 48);
   margin-bottom: 5px;
 }
+
 .more-func a {
   padding: 5px;
 }
@@ -172,9 +181,11 @@ section #menu ul li a i {
 .more-func:hover .more-func-child {
   display: block;
 }
+
 .more-func:hover .func-icon-down {
   display: inline-block;
 }
+
 .more-func:hover .func-icon-right {
   display: none;
 }
@@ -186,6 +197,7 @@ section #menu ul li a i {
   width: 82%;
   border-radius: 5px;
 }
+
 #showFunction img {
   width: 97%;
 }
@@ -195,6 +207,7 @@ section #menu ul li a i {
   display: flex;
   flex-wrap: wrap;
 }
+
 .grid-4 {
   width: 23%;
   border-radius: 5px;
@@ -202,22 +215,26 @@ section #menu ul li a i {
   margin: 10px;
   overflow: hidden;
 }
+
 .grid-4 h3,
 .grid-4 .left p {
   color: white;
   font-size: 20px;
   margin: 10px;
 }
+
 .grid-4 .left p {
   text-align: center;
   font-size: 27px;
 }
+
 .grid-4 .left {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80%;
 }
+
 .grid-4 .left i {
   margin-left: 20px;
   font-size: 60px;
@@ -225,6 +242,7 @@ section #menu ul li a i {
   color: rgb(255, 255, 255);
   opacity: 0.7;
 }
+
 .grid-4 .see-more {
   height: 20%;
   display: flex;
@@ -232,32 +250,44 @@ section #menu ul li a i {
   align-items: center;
   background-color: rgba(35, 33, 33, 0.1);
 }
+
 .grid-4 .see-more a {
   text-decoration: none;
   color: white;
 }
+
 footer {
   border-top: 1px solid black;
-  background-color: rgb(173, 23, 28);
+  background-color:  #324960; /* Đổi màu footer sang XÁM ĐEN */
   clear: both;
 }
+
 .logout {
-  background-color: rgb(173, 23, 28);
+  background-color: #ff5722; /* Đổi màu logout sang cam */
 }
+
 .footer-contain {
   display: flex;
   justify-content: space-between;
   width: 70%;
   margin: 10px auto -10px auto;
 }
+
 .footer-contain p,
 .footer-contain h2 {
   color: white;
   font-size: 16px;
 }
+
 .footer-contain-left {
-  padding-right: 100px;
-  border-right: 1px solid black;
+  padding-left: 0;   /* Loại bỏ khoảng cách trái */
+  padding-right: 0;  /* Loại bỏ khoảng cách phải */
+  border-right: none; /* Loại bỏ viền phải */
+  text-align: left;   /* Căn trái */
+}
+
+.address {
+  margin-left: 0; /* Đảm bảo không có margin trái */
 }
 
 .footer-contain-left p {
@@ -265,17 +295,19 @@ footer {
   margin: 5px 0;
   font-size: 12px;
 }
+
 .footer-contain-right {
   width: 50%;
   padding-left: 80px;
 }
+
 .footer-contain-right .contact {
   display: flex;
   margin-top: 20px;
 }
+
 .contact .contact-left a {
   text-decoration: none;
-  color: black;
   color: rgb(212, 212, 212);
   font-size: 14px;
 }
@@ -285,12 +317,15 @@ footer {
   color: rgb(212, 212, 212);
   margin: 5px 5px;
 }
+
 .contact .contact-right {
   margin-left: 10px;
 }
+
 .contact .contact-right p {
   margin: 10px 10px;
 }
+
 .table-wrapper {
   margin: 10px 70px 70px;
   box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
@@ -326,152 +361,11 @@ footer {
 
 .fl-table thead th {
   color: #ffffff;
-  background: rgb(173, 23, 28);
-}
-
-.fl-table thead th:nth-child(odd) {
-  color: #ffffff;
-  background: rgb(173, 23, 28);
+  background:#ff5722; /* Đổi màu nền header bảng sang cam */
 }
 
 .fl-table tr:nth-child(even) {
   background: #f8f8f8;
-}
-
-/* Responsive */
-
-@media (max-width: 767px) {
-  .fl-table {
-    display: block;
-    width: 100%;
-  }
-  .table-wrapper:before {
-    content: "Scroll horizontally >";
-    display: block;
-    text-align: right;
-    font-size: 11px;
-    color: white;
-    padding: 0 0 10px;
-  }
-  .fl-table thead,
-  .fl-table tbody,
-  .fl-table thead th {
-    display: block;
-  }
-  .fl-table thead th:last-child {
-    border-bottom: none;
-  }
-  .fl-table thead {
-    float: left;
-  }
-  .fl-table tbody {
-    width: auto;
-    position: relative;
-    overflow-x: auto;
-  }
-  .fl-table td,
-  .fl-table th {
-    padding: 20px 0.625em 0.625em 0.625em;
-    height: 60px;
-    vertical-align: middle;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: auto;
-    width: 120px;
-    font-size: 13px;
-    text-overflow: ellipsis;
-  }
-  .fl-table thead th {
-    text-align: left;
-    border-bottom: 1px solid #f7f7f9;
-  }
-  .fl-table tbody tr {
-    display: table-cell;
-  }
-  .fl-table tbody tr:nth-child(odd) {
-    background: none;
-  }
-  .fl-table tr:nth-child(even) {
-    background: transparent;
-  }
-  .fl-table tr td:nth-child(odd) {
-    background: #f8f8f8;
-    border-right: 1px solid #e6e4e4;
-  }
-  .fl-table tr td:nth-child(even) {
-    border-right: 1px solid #e6e4e4;
-  }
-  .fl-table tbody td {
-    display: block;
-    text-align: center;
-  }
-}
-.title-table th {
-  padding: 10px;
-}
-.title-table td {
-  padding: 10px;
-  float: left;
-}
-.btnSave {
-  float: right;
-  border: 1px solid rgb(173, 23, 28);
-  border-radius: 5px;
-  padding: 5px 20px;
-  background-color: rgb(173, 23, 28);
-  color: white;
-}
-.btnSave:hover {
-  cursor: pointer;
-}
-.edit_diem {
-  border: 1px solid #ccc;
-  padding: 5px;
-  width: 300px;
-}
-.edit_sinhvien {
-  border: 1px solid #ccc;
-  padding: 5px;
-  width: 200px;
-}
-.info_lop {
-  border: 1px solid #ccc;
-  padding: 5px;
-  width: 200px;
-}
-h1 {
-  margin: 30px;
-  color: rgb(173, 23, 28);
-}
-.head_title {
-  margin: 0 auto;
-  width: 70%;
-  align-items: center;
-  text-align: center;
-  border-bottom: 1px solid #ccc;
-}
-
-.input-css {
-  padding: 5px 20px;
-  outline: none;
-}
-.btn-submit-css {
-  padding: 7px 10px;
-  border: none;
-  background-color: rgb(173, 23, 28);
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.back {
-  margin-left: 10px;
-  padding: 5px;
-  float: left;
-  border: none;
-  background-color: rgb(173, 23, 28);
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 .page-css {
@@ -479,9 +373,10 @@ h1 {
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
-  border: 1px solid rgb(173, 23, 28);
-  background-color: rgb(173, 23, 28);
+  border: 1px solid #ff5722; /* Viền cam */
+  background-color: #ff5722; /* Nền cam */
 }
+
 .pagination {
   width: 94%;
 }

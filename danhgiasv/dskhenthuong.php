@@ -1,5 +1,6 @@
 <?php
    $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
+
     $hk = isset($_GET['id']) ? $_GET['id'] : '';
     if(!$hk){
         $hk = 4;

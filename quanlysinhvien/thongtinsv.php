@@ -1,7 +1,6 @@
 <?php
-     $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
-     mysqli_set_charset($conn, 'utf8');
- 
+    $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
+    mysqli_set_charset($conn, 'utf8');
      $id = $_GET["id"];
  
      $result = mysqli_query($conn, "select *from lop join sinhvien on sinhvien.MaLop=lop.MaLop 

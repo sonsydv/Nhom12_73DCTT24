@@ -1,5 +1,6 @@
 <?php
-   $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
+    $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
+
     $query = mysqli_query($conn, "select * from canhcao");
     $dssv = array();
     while ($row = mysqli_fetch_array($query)){

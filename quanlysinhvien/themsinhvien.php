@@ -1,6 +1,7 @@
 <?php
     $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
     mysqli_set_charset($conn, 'utf8');
+
         $result = mysqli_query($conn,
          "select *from sinhvien join nganh on sinhvien.MaNganh=nganh.MaNganh");
         $row = mysqli_fetch_assoc($result);

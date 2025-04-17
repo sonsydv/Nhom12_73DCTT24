@@ -1,6 +1,6 @@
 <?php
- $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
- mysqli_set_charset($conn, 'utf8');
+   $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
+   mysqli_set_charset($conn, 'utf8');
     
     $id = isset($_POST['id']) ? $_POST['id'] : '';
     if($id){

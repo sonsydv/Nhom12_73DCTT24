@@ -1,6 +1,6 @@
 <?php
-    $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
-    mysqli_set_charset($conn, 'utf8');
+   $conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") or die("Connection failed !");
+   mysqli_set_charset($conn, 'utf8');
     $result = mysqli_query($conn, 'select count(MaSo) as total from thesv');
     $row = mysqli_fetch_assoc($result);
     $total_records = $row['total'];
