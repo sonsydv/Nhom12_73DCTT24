@@ -24,7 +24,7 @@
         <div class="title">
             <div class="Group1">
                 <div class="logo">
-                <img src="/QLSV PHP - MAIN/images/bf1e7892c5d69465c57d7d1397026e23.jpg" alt="">
+                <img src="D:\KT\QLSV_PHP-main\images\bf1e7892c5d69465c57d7d1397026e23.jpg" alt="">
                 </div>
                 <div class="img-content">
                 <img src="./images/LOGOUTT.png" alt="">
