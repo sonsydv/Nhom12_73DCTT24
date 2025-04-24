@@ -1,6 +1,74 @@
 <?php
-	$conn = mysqli_connect("localhost", "QLSV_db", "", "QLSV") ;
-    mysqli_set_charset($conn, 'utf8');
+session_start();
+$conn = mysqli_connect('localhost', 'root', '', 'qlsv');
+mysqli_set_charset($conn, "utf8");
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Quản lý sinh viên UTT</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css?v=1.0" />
+</head>
+
+<body>
+  <!-- 'start thực hiện kiểm tra dữ liệu người dùng nhập ở form đăng nhập' -->
+  <?php
+  if (isset($_POST["login"])) {
+    $tk = $_POST["username"];
+    $mk = $_POST["passlg"];
+    $rows = mysqli_query($conn, "
+select * from users where username = '$tk' and pass = '$mk'
+");
+    $count = mysqli_num_rows($rows);
+    if ($count == 1) {
+      $_SESSION["loged"] = true;
+      header("location:index.php?page=admin");
+      $_SESSION['user'] = $_POST["username"];
+      setcookie("success", "!", time() + 1, "/", "", 0);
+    } else {
+      header("location:index.php?page=login");
+      setcookie("error", "!", time() + 1, "/", "", 0);
+    }
+  }
+  ?>
+  <!-- 'end thực hiện kiểm tra dữ liệu người dùng nhập ở form đăng nhập' -->
+
+  <?php
+  if (isset($_COOKIE["error"])) {
+    $message = "Sai tài khoản hoặc mật khẩu! Vui lòng đăng nhập lại.";
+    echo "<script type='text/javascript'>
+alert('$message');
+</script>";
+  ?>
+  <?php } ?>
+
+  <?php
+  if (isset($_COOKIE["success"])) {
+    $message = "Đăng nhập thành công!";
+    echo "<script type='text/javascript'>
+alert('$message');
+</script>";
+    echo "<script language='javascript'>
+document.getElementById('panel').style.display = 'none';
+</script>";
+  ?>
+  <?php } ?>
+
+  <?php
+  if ($_GET["page"] && $_GET["page"] == "admin")
+    include "admin.php";
+  if ($_GET["page"] && $_GET["page"] == "login")
+    include "login.php";
+  ?>
+</body>
+
+</html>
+<?php
+	$conn = mysqli_connect('localhost','root','','qlsv');
+	mysqli_set_charset($conn,"utf8");
     //session_start();
     $user = $_SESSION['user'];
     $sql = "SELECT * FROM users WHERE username = '$user'";
